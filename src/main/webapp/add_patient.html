@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>NEW PATIENT</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		outline: none;
+	}
+	.container{
+		width: 600px;
+		border-radius: 4px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid black;
+		margin: 80px 0px;
+	}
+
+	input {
+		padding: 12px 10px;
+		font-size: 22px;
+		width: 100%;
+	}
+
+	#form {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	input[type = submit]{
+		width: 200px;
+		margin: 0 auto;
+		background-color: #28a745;
+		border: 1px solid white;
+		color: white;
+	}
+	input[type = submit]:hover{
+		transition: 0.5s;
+		background-color: rgb(41, 160, 41);
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+<h1>Add new patient</h1>
+<form class="form-group" id="addDoc" method="POST" action="add_patient">
+	<input class="form-control" type="text" name="name" placeholder="NAME"><br>
+	<input class="form-control" type="email" name="email" placeholder="EMAIL"><br>
+	<input class="form-control" type="number" name="phone" placeholder="PHONE"><br>
+	<input class="form-control" type="number" name="age" placeholder="AGE"><br>
+	<select class="form-control" name="gender">
+	<option value="male">MALE</option>
+	<option value="female">FEMALE</option>
+	<option value="other">OTHER</option>
+	</select><br>
+	<input class="form-control" type="text" name="blood" placeholder="BLOOD TYPE"><br>
+	<input class="form-control" type="text" name="symptom" placeholder="SYMPTOMS"><br>
+	<input class="form-control" type="text" name="disease" placeholder="DISEASE DIAGNOSED"><br>
+	<input class="form-control" type="submit" value="ADD PATIENT">
+</form>
+</div>
+</body>
+</html>

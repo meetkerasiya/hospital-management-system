@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Show patient</title>
+	<script>
+	</script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			outline: none;
+		}
+		body{
+			background-color: white;
+		}
+
+		.container {
+			width: 760px;
+			border-radius: 4px;
+			position: absolute;
+			left: 25%;
+			top: 15%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid black;
+			margin: 80px 0px;
+		}
+
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		td,
+		th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+
+		button {
+			width: 150px;
+			margin: 0 auto;
+			padding: 7px;
+			background-color: #28a745;
+			border: 1px solid white;
+			border-radius: 2px;
+			color: white;
+		}
+
+		button:hover {
+			transition: 0.5s;
+			background-color: rgb(41, 160, 41);
+		}
+
+		#add input {
+			padding: 25px 10px;
+			margin: 3px;
+			width: 40%;
+			font-size: 22px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Get all Patient</h1> <br><br>
+		<button  type="button" onclick="doc()">CLICK ME</button>
+		<br><br>
+		<div id="box">
+		</div>
+	</div>
+
+						<!-- script tag -->
+	<script>
+
+		function doc() {
+			window.location.href = "get_patient.jsp";
+		}
+	</script>
+</body>
+
+</html>

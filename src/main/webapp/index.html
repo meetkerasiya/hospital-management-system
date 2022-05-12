@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+	<title>HOSPITAL MANAGEMENT INDEX</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+		</script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			outline: none;
+		}
+
+		#assistant {
+			width: 400px;
+			height: 250px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			border: 0px solid grey;
+			border-radius: 2px;
+			box-shadow: 1px 1px 2px 0px black;
+			font-size: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+		}
+		#assistant :nth-child(1){
+			margin-top: 50px;
+		}
+		.img {
+			width: 100%;
+			position: absolute;
+		}
+	</style>
+	<script>
+
+		function fun(link) {
+			window.location = link;
+		}
+	</script>
+</head>
+
+	
+<body>
+	<div align=center id="assistant">
+		<button class="btn btn-success" type="button" onclick=" fun('login.html')">LOGIN</button><BR><BR>
+		<button class="btn btn-success" type="button" onclick=" fun('new_user.html')">NEW ACCOUNT</button><BR><BR>
+	</div>
+</body>
+</html>
